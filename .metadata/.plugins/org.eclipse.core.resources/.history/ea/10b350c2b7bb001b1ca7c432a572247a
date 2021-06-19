@@ -1,0 +1,17 @@
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class SalesforceE2E {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "//Users//sr20015260//eclipse-workspaceNew//geckodriver");    
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.rediff.com/");
+
+	
+	
+	  
+driver.close();
+	}
+}

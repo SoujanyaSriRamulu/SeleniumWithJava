@@ -1,0 +1,28 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class LocatorMethods {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "//Users//sr20015260//eclipse-workspaceNew//geckodriver");    
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://login.salesforce.com/?locale=in");
+		
+		
+		
+		
+		driver.findElement(By.id("email")).sendKeys("sriramulasoujanya@gmail.com");
+		//driver.findElement(By.name("email")).sendKeys("9492709720");
+		//driver.findElement(By.linkText("Forgotten password?")).click();
+	  //  driver.findElement(By.id("username")).sendKeys("Enter Username");
+	   driver.findElement(By.name("pw")).sendKeys("enter password");
+	  // driver.findElement(By.className("button r4 wide primary")).click();
+	
+   // driver.findElement(By.name("login")).click();
+	   driver.findElement(By.xpath("//*[@id=\'Login\']"));
+	   driver.close();
+	   driver.quit();
+	
+	}
+}
